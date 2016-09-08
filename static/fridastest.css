@@ -1,0 +1,90 @@
+
+body {
+	background: <img src="https://cdn1.cdnme.se/1024491/9-3/2016-01-17-2152_569bff169606ee7d286b3633.jpg">
+font: 12 pt/1.4 "Metric Regular", "Metric"
+, serif;
+
+}
+h1 {
+	color: #670D91;
+	text-align: center;
+	font-family: 'Paytone One';
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26px;
+
+}
+.header {
+	text-align: center;
+	font-family: 'Paytone One';
+	font-size:50px;
+	font-style: bolder;
+	font-variant: bolder;
+	font-weight: 500;
+	line-height: 50px;
+}
+.p {
+	color: #893BAD;
+	text-align: center;
+	font-family: 'Paytone One';
+	font-size: 14px;
+	font-style: bolder;
+	font-variant: bolder;
+	font-weight: 400;
+	line-height: 20px;
+}
+h2 {
+	text-align: center;
+	font-family: 'Paytone One';
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15px;
+}
+h3 {
+	color: #893BAD;
+	text-align: center;
+	font-family: 'Paytone One';
+	font-size: 25px;
+	font-style: bolder;
+	font-variant: bolder;
+	font-weight: 500;
+	line-height: 25px;
+}
+.result {
+	color: #BB8AD1;
+	text-align: center;
+} 
+.a {
+	color: #BB8AD1;
+	
+}
+.column1 {text-align: center;
+}
+.column2 {text-align: center;
+}
+.column3 {text-align: center;
+}
+
+.btn {
+	background: #893BAD;
+}
+
+.caption {
+	color: #BB8AD1
+	;
+}
+}
+P {border-bottom: 1px solid #FF9999;
+padding-bottom: 5px;
+}
+.resulttext {
+	text-align: center;
+}
+
+}
+
+
