@@ -9,13 +9,13 @@ h1 {
 	color: #670D91;
 	text-align: center;
 	font-family: 'Paytone One';
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
+	font-size: 50px;
+	font-style: bolder;
+	font-variant: bolder;
 	font-weight: 500;
-	line-height: 26px;
-
+	line-height: 50px;
 }
+
 .header {
 	text-align: center;
 	font-family: 'Paytone One';
@@ -38,51 +38,47 @@ h1 {
 h2 {
 	text-align: center;
 	font-family: 'Paytone One';
-	font-size: 15px;
-	font-style: normal;
-	font-variant: normal;
+	font-size: 35px;
+	font-style: bold;
+	font-variant: bold;
 	font-weight: 500;
-	line-height: 15px;
+	line-height: 35px;
 }
 h3 {
 	color: #893BAD;
 	text-align: center;
 	font-family: 'Paytone One';
-	font-size: 25px;
-	font-style: bolder;
-	font-variant: bolder;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
 	font-weight: 500;
-	line-height: 25px;
+	line-height: 20px;
 }
 h4 {
 	color: #893BAD;
 	text-align: center;
 	font-family: 'Paytone One';
-	font-size: 25px;
+	font-size: 12px;
 	font-style: bolder;
 	font-variant: bolder;
 	font-weight: 500;
-	line-height: 25px;
-}
-.correct {
-	text-align: center;
-}
-.total {
-	text-align: center;
+	line-height: 12px;
 }
 .result {
 	color: #BB8AD1;
 	text-align: center;
 } 
 .a {
-	color: #BB8AD1;
-	
+	color: #BB8AD1;	
 }
-.column1 {text-align: center;
+.column1 {
+	text-align: center;
 }
-.column2 {text-align: center;
+.column2 {
+	text-align: center;
 }
-.column3 {text-align: center;
+.column3 {
+	text-align: center;
 }
 
 .btn {
@@ -90,12 +86,13 @@ h4 {
 }
 
 .caption {
-	color: #BB8AD1
-	;
+	color: #BB8AD1;
 }
-}
-P {border-bottom: 1px solid #FF9999;
-padding-bottom: 5px;
+
+P {
+	border-bottom: 1px 
+	solid #FF9999;
+	padding-bottom: 5px;
 }
 .resulttext {
 	text-align: center;

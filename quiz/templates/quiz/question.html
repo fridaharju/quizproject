@@ -14,21 +14,16 @@
 <body>
 <div class="container">
 <div class="row">
-<div class="col-md-1 column1">column1</div>
+<div class="col-md-1 column1"></div>
 <div class="col-md-10 column2">
 <h1> {{ question_number }} {{question }} </h1>
-<p> {{ answer1 }} </p>
-<p> {{ answer2 }} </p>
-<p> {{ answer3 }} </p>
-<p><a href="{% url 'completed_page' quiz_number %}">Nästa</a></p>
 <form action="action.page.php">
+{{ answer1 }} <input type="checkbox" name="answer one"> <br>
+{{ answer2 }} <input type="checkbox" name="answer two"> <br>
+{{ answer3 }} <input type="checkbox" name="answer three"> <br>
 <ul>
-<input type="checkbox" name="answer one" value=hej> <br>
-<input type="checkbox" name="answer two" value="hejhej"> <br>
-<input type="checkbox" name="answer three" value="hejhejhej"> <br>
-
-
+<p><a href="{% url 'result_page' quiz_number %}" class="btn btn-primary" role="button">Next</a></p>
 </div>
-<div class="col-md-1 column3">column3</div>
+<div class="col-md-1 column3"></div>
 </body>
 </html>

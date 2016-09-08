@@ -12,53 +12,27 @@
 </head>
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
 <body>
-{% for quiz in quizzes %}
-   <p><a href="{% url 'quiz_page' quiz.quiz_number %}">
-        {{ quiz.name }}
-    </a></p>
-{% endfor %}
-
 <header>
 <h1> Quiztime </h1>
 <h4> How curious and knowledgeable are you? </h4> 
  </header>
   <div class="container">
     <div class="row">
+     {% for quiz in quizzes %}
       <div class="col-md-4 column1"> 
         <div class="thumbnail">
-         <img src="https://cdn1.cdnme.se/1024491/9-3/dsc05048_572a54a3ddf2b35586374f95.jpg">
+         <img src= {{ quiz.image }} >
 
           <div class="caption">
-            <h3>How well do you know Fridan?</h3>
-            <h2>Let's find out if you know or can guess some small facts about me</h2>
-            <p><a href="quiz1.html" class="btn btn-primary" role="button">Take the test</a> </a></p>
+            <h2> {{ quiz.name }} </h2>
+            <h3> {{ quiz.description }} </h3>
+            
+   <p><a href="{% url 'quiz_page' quiz.quiz_number %}" class="btn btn-primary" role="button">take the test
+        </a></p>
+ 
             <br>
           </div>
         </div>
       </div></div>
-      <div class="col-md-4 column2">
-        <div class="thumbnail">
-          <img src="https://cdn1.cdnme.se/1024491/7-3/aaaaaaaa_54117af62a6b22195b43bb70.jpg">
-          <div class="caption">
-            <h3>Are you a health expert?</h3>
-            <h2>Test your general knowledge about health</h2>
-            <p><a href="quiz2.html" class="btn btn-primary" role="button"> Take the test </a> </a>
-            </p>
-            <br>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 column3">
-        <div class="thumbnail">
-          <img src="https://d3vjk4jagnknqc.cloudfront.net/uploads/2013/11/f1190198-2048x1151.jpg">
-          <div class="caption">
-            <h3>Sweden - the country and customs</h3>
-            <h2>This quiz is about interesting facts about sweden and it sometimes weird customs </h2>
-            <p><a href="quiz3.html" class="btn btn-primary" role="button"> Take the test </a></a></p>
-            <br></div>
-          </div>
-        </div>
-      </div>
-      </div> </div>
-  </body>
-  </html>
+      {% endfor %}
+  
