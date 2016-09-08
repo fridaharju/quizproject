@@ -54,6 +54,16 @@ h3 {
 	font-weight: 500;
 	line-height: 25px;
 }
+h4 {
+	color: #893BAD;
+	text-align: center;
+	font-family: 'Paytone One';
+	font-size: 25px;
+	font-style: bolder;
+	font-variant: bolder;
+	font-weight: 500;
+	line-height: 25px;
+}
 .result {
 	color: #BB8AD1;
 	text-align: center;
