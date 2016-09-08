@@ -18,7 +18,10 @@ quizzes = [
 
 from django.shortcuts import render
 def start(request):
-	return render(request, "quiz/start.html")
+	context = {
+		"quizzes": quizzes,
+	}
+	return render(request, "quiz/startpage.html", context)
 def quiz(request):
 	return render(request, "quiz/quiz1.html")
 def question(request):
