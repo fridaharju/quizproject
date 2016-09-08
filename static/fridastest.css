@@ -29,30 +29,30 @@ h1 {
 	color: #893BAD;
 	text-align: center;
 	font-family: 'Paytone One';
-	font-size: 14px;
+	font-size: 20px;
 	font-style: bolder;
 	font-variant: bolder;
 	font-weight: 400;
 	line-height: 20px;
 }
 h2 {
-	text-align: center;
-	font-family: 'Paytone One';
-	font-size: 35px;
-	font-style: bold;
-	font-variant: bold;
-	font-weight: 500;
-	line-height: 35px;
-}
-h3 {
 	color: #893BAD;
 	text-align: center;
 	font-family: 'Paytone One';
-	font-size: 20px;
+	font-size: 30px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 20px;
+	line-height: 30px;
+}
+h3 {
+	text-align: center;
+	font-family: 'Paytone One';
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15px;
 }
 h4 {
 	color: #893BAD;
@@ -63,6 +63,16 @@ h4 {
 	font-variant: bolder;
 	font-weight: 500;
 	line-height: 12px;
+}
+.answer {
+	color: #893BAD;
+	text-align: center;
+	font-family: 'Paytone One';
+	font-size: 15px;
+	font-style: bolder;
+	font-variant: bolder;
+	font-weight: 500;
+	line-height: 15px;
 }
 .result {
 	color: #BB8AD1;
@@ -82,7 +92,7 @@ h4 {
 }
 
 .btn {
-	background: #893BAD;
+	background: #670D91;
 }
 
 .caption {
