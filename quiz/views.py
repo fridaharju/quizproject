@@ -38,8 +38,14 @@ def question(request, quiz_number, question_number):
 	    	"quiz_number": quiz_number,
 	}
 	return render(request, "quiz/question.html", context)
-def result(request):
-	return render(request, "quiz/result.html")
+def result(request, quiz_number):
+	context = {
+	    	"correct": 12,
+	    	"total": 20,
+		"quiz_number": quiz_number,
+	}
+	return render(request, "quiz/result.html", context)
+
 
 
 # Create your views here.

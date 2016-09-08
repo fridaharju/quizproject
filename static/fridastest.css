@@ -64,6 +64,12 @@ h4 {
 	font-weight: 500;
 	line-height: 25px;
 }
+.correct {
+	text-align: center;
+}
+.total {
+	text-align: center;
+}
 .result {
 	color: #BB8AD1;
 	text-align: center;
