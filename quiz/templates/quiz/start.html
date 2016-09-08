@@ -13,7 +13,9 @@
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
 <body>
 {% for quiz in quizzes %}
-  <p>{{ quiz.name }}</p>
+   <p><a href="{% url 'quiz_page' quiz.quiz_number %}">
+        {{ quiz.name }}
+    </a></p>
 {% endfor %}
 
 <header>
