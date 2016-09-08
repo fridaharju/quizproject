@@ -28,8 +28,16 @@ def quiz(request, quiz_number):
 		"quiz_number": quiz_number,
 	}
 	return render(request, "quiz/quiz1.html", context)
-def question(request):
-	return render(request, "quiz/question.html")
+def question(request, quiz_number, question_number):
+	context = {
+		"question_number": question_number,
+	    	"question": "Hur många bultar har ölandsbron?",
+		"answer1": "12",
+	   	"answer2": "66 400",
+	    	"answer3": "7 428 954",
+	    	"quiz_number": quiz_number,
+	}
+	return render(request, "quiz/question.html", context)
 def result(request):
 	return render(request, "quiz/result.html")
 
