@@ -1,9 +1,5 @@
 from django.shortcuts import redirect
 from quiz.models import Quiz
-
-
-
-
 from django.shortcuts import render
 def start(request):
 	context = {
@@ -47,6 +43,18 @@ else:
     return redirect("question_page", quiz_number, question_number + 1)
 
 def result(request, quiz_number):
+	quiz = Quiz.objects.get(quiz_number=quiz_number)
+	questions = quiz.questions.all()
+	saved_answers = request.session.get(quiz_number, {})
+	num_correct_answers = 0
+for question_number, answer in saved_answers.items():
+    	correct_answer = questions[int(question_number) - 1].correct
+    	if correct_answer == answer:
+	        	num_correct_answers += 1
+	context = {
+    	"correct": num_correct_answers,
+    	"total": questions.count(),
+}
 	context = {
 	    	"correct": 12,
 	    	"total": 20,
