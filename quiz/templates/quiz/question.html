@@ -17,11 +17,12 @@
 <div class="col-md-1 column1"></div>
 <div class="col-md-10 column2">
 <h1> {{ question_number }} {{question }} </h1>
-<form action="action.page.php">
-<p class="answer"> {{ answer1 }} <input type="checkbox" name="answer one"> <br>
-{{ answer2 }} <input type="checkbox" name="answer two"> <br>
-{{ answer3 }} <input type="checkbox" name="answer three"> </p>
+<form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">{% csrf_token %}
+<p class="answer"> {{ answer1 }} <input type="radio" name="answer" value="1"> <br>
+{{ answer2 }} <input type="radio" name="answer" value="2"> <br>
+{{ answer3 }} <input type="radio" name="answer" value="3"> </p>
 <p><a href="{% url 'result_page' quiz_number %}" class="btn btn-primary" role="button">Next</a></p>
+</form>
 </div>
 <div class="col-md-1 column3"></div>
 </body>

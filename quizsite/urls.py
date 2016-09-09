@@ -9,4 +9,5 @@ urlpatterns = [
 	url(r"^quiz/([0-9]+)/question/([0-9]+)/$", views.question, name="question_page"),
 	url(r"^quiz/([0-9]+)/result/$", views.result, name="result_page"),
 	url(r'^admin/', include(admin.site.urls)),
+	url(r"^quiz/([0-9]+)/question/([0-9]+)/answer/$", views.answer, name="answer_page"),
 	]
