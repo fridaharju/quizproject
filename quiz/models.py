@@ -2,6 +2,7 @@ from django.db import models
 class Quiz(models.Model):
 	quiz_number = models.PositiveIntegerField()
 	name = models.CharField(max_length=100)
+	image = models.CharField(max_length=100)
 	description = models.TextField()
 	def __str__(self):
 		return self.name
@@ -15,5 +16,6 @@ class Question(models.Model):
 	quiz = models.ForeignKey(Quiz, related_name="questions")
 	def __str__(self):
 		return self.quiz.name + " / " + self.question
+
 
 	
