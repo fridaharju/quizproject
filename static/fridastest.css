@@ -94,6 +94,16 @@ h4 {
 	font-weight: 500;
 	line-height: 30px;
 }
+.questions {
+	color: #893BAD;
+	text-align: center;
+	font-family: 'Paytone One';
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 30px;
+}
 .column3 {
 	text-align: center;
 }

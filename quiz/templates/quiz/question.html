@@ -16,7 +16,7 @@
 <div class="row">
 <div class="col-md-1 column1"></div>
 <div class="col-md-10 column2">
-<h2> {{ question_number }} {{question }} </h2>
+<class="questions"> {{ question_number }} {{question }}
 <form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">{% csrf_token %}
 <p class="answer"> {{ answer1 }} <input type="radio" name="answer" value="1"> <br>
 {{ answer2 }} <input type="radio" name="answer" value="2"> <br>
