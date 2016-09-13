@@ -18,12 +18,12 @@
 <div class="col-md-10 column2">
 <h2> {{ question_number }} {{question }} </h2>
 <form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">{% csrf_token %}
-<p class="answer"> {{ answer1 }} <input type="radio" name="answer" value="1"> <br>
+<p class="theanswer"> {{ answer1 }} <input type="radio" name="answer" value="1"> <br>
 {{ answer2 }} <input type="radio" name="answer" value="2"> <br>
 {{ answer3 }} <input type="radio" name="answer" value="3"> </p>
 
-<p><a> <button type="submit" class="btn btn-primary" role="button">Next </button>
-</p></a>
+<p><a> <button type="submit" class="btn btn-primary" role="button">Next</button></a>
+</p>
 
 </form>
 </div>
