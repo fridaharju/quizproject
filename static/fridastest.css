@@ -75,9 +75,15 @@ h4 {
 	line-height: 15px;
 }
 .result {
-	color: #BB8AD1;
+	color: #670D91;
 	text-align: center;
-} 
+	font-family: 'Paytone One';
+	font-size: 50px;
+	font-style: bolder;
+	font-variant: bolder;
+	font-weight: 500;
+	line-height: 50px;
+}
 .a {
 	color: #BB8AD1;	
 }
