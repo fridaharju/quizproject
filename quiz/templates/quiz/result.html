@@ -21,7 +21,7 @@
 <h1> {{ correct }} </h1>
 <h2> {{ totalt }} </h2>
 {% for question in questions %}
- 		<h4 Question was: {{ question.question }} <br>
+ 		<h4> Question was: {{ question.question }} <br>
  		Correct answer is: {{ question.correct }}<br>
  		Your answer was: {{ question.user_answer }}
  		{% if question.correct == question.user_answer %}
