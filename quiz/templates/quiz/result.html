@@ -20,6 +20,16 @@
 <h2> Yeeeay you are done and awesome </h2>
 <h1> {{ correct }} </h1>
 <h2> {{ totalt }} </h2>
+{% for question in questions %}
+ 		<p class="theanswer> Question was: {{ question.question }} <br>
+ 		Correct answer is: {{ question.correct }}<br>
+ 		Your answer was: {{ question.user_answer }}</p>
+ 		{% if question.correct == question.user_answer %}
+ 			<p>You rock!</p>
+ 		{% else %}
+ 			<p>ooops sorry!</p>
+		{% endif %}
+ 	{% endfor %}
 <p><img src= "https://cdn1.cdnme.se/1024491/9-3/image_57d6efeb2a6b220c58f8ba0f.jpg"></p>
 <br>
 

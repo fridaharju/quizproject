@@ -44,7 +44,7 @@ def answer(request, quiz_number, question_number):
 
 def result(request, quiz_number):
     quiz = Quiz.objects.get(quiz_number=quiz_number)
-    questions = quiz.questions.all()
+    questions = list(quiz.questions.all())
     saved_answers = request.session.get(quiz_number, {})
 
     num_correct_answers = 0
@@ -55,7 +55,8 @@ def result(request, quiz_number):
 
     context = {
         "correct": num_correct_answers,
-        "total": questions.count(),
+        "total": len(questions),
+        "questions": questions,
     }
     return render(request, "quiz/result.html", context)
 
